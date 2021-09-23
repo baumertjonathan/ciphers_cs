@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace CaesarCipherNS
+namespace ciphers_cs
 {
    public class CaesarCipher
    {
