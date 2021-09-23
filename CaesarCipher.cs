@@ -1,28 +1,32 @@
 ﻿using System;
 
-public class CaesarCipher
+namespace CaesarCipherNS
 {
-    public CaesarCipher() 
-    {
-        string Alphabet = "abcdefghijklmnopqrstuvwxyz";
-    }
-
-    public string Encrypt(string text, int key) 
-    {
-        string Result = "";
-
-        for (int i = 0; i <= text.Length; i++) 
+   public class CaesarCipher
+   {
+        private const string alphabet = "abcdefghijklmnopqrstuvwxyz";
+        public string Encrypt(string text, int key)
         {
-            
+            string Result = "";
+            text = text.Replace(" ", string.Empty);
+            text = text.ToLower();
+            for (int i = 0; i < text.Length; i++)
+            {
+                int index = alphabet.IndexOf(text[i]) + key;
+                Result += alphabet[index >= 26 ? index - 26 : index];
+            }
+            return Result;
         }
-
-        return Result;
-    }
-
-    public string Decrypt(string text, int key) 
-    {
-        string Result = "";
-
-        return Result;
-    }
+        public string Decrypt(string text, int key)
+        {
+            string Result = "";
+            text = text.Replace(" ", string.Empty);
+            for (int i = 0; i < text.Length; i++)
+            {
+                int index = alphabet.IndexOf(text[i]) - key;
+                Result += alphabet[index < 0 ? index + 26 : index];
+            }
+            return Result;
+        }
+   }
 }
