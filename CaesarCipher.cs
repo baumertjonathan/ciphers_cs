@@ -4,7 +4,7 @@ namespace ciphers_cs
 {
    public class CaesarCipher
    {
-        private const string alphabet = "abcdefghijklmnopqrstuvwxyz";
+        private readonly string alphabet = "abcdefghijklmnopqrstuvwxyz";
         public string Encrypt(string text, int key)
         {
             string Result = "";
