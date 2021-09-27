@@ -12,7 +12,7 @@ namespace ciphers_cs
         }
 
         private bool modern;
-        private readonly Dictionary<char, string> Baconian26E = new Dictionary<char, string>()
+        internal readonly Dictionary<char, string> Baconian26E = new Dictionary<char, string>()
         {
             { 'a', "aaaaa" },
             { 'b', "aaaab" },
@@ -68,7 +68,7 @@ namespace ciphers_cs
             { 'Z', "bbaab" },
         };
 
-        private readonly Dictionary<char, string> Baconian24E = new Dictionary<char, string>()
+        internal readonly Dictionary<char, string> Baconian24E = new Dictionary<char, string>()
         {
             { 'a', "aaaaa" },
             { 'b', "aaaab" },
@@ -124,7 +124,7 @@ namespace ciphers_cs
             { 'Z', "babbb" },
         };
 
-        private readonly Dictionary<string, char> Baconian26D = new Dictionary<string, char>()
+        internal readonly Dictionary<string, char> Baconian26D = new Dictionary<string, char>()
         {
             { "aaaaa", 'a' },
             { "aaaab", 'b' },
@@ -154,7 +154,7 @@ namespace ciphers_cs
             { "bbaab", 'z' },
         };
 
-        private readonly Dictionary<string, char> Baconian24D = new Dictionary<string, char>()
+        internal readonly Dictionary<string, char> Baconian24D = new Dictionary<string, char>()
         {
             { "aaaaa", 'a' },
             { "aaaab", 'b' },

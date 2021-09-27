@@ -6,8 +6,8 @@ namespace ciphers_cs
 {
     public class AtbashCipher
     {
-        private readonly string alphabet = "abcdefghijklmnopqrstuvwxyz";
-        private readonly string tebahpla = "zyxwvutsrqpomnlkjihgfedcba";
+        internal readonly string alphabet = "abcdefghijklmnopqrstuvwxyz";
+        internal readonly string tebahpla = "zyxwvutsrqpomnlkjihgfedcba";
 
         public string Encrypt( string text )
         {
