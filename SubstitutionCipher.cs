@@ -40,8 +40,6 @@ namespace ciphers_cs
                 }
             }
             return result;
-
-            return result;
         }
     }
 
