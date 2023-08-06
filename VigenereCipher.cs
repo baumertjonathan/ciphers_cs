@@ -47,12 +47,10 @@ namespace ciphers_cs
             {
                 key += key;
             }
-
             for (int i = 0; i < text.Length; i++)
             {
                 result += tabulaRecta[alphabet.IndexOf(text[i]), alphabet.IndexOf(key[i])];    
             }
-
             return result;
         }
 
